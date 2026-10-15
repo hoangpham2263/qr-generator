@@ -4,7 +4,6 @@ Tạo mã QR ngay trên trình duyệt — không gửi dữ liệu đi đâu c�
 
 **Dùng thử:** https://hoangpham.is-a.dev/qr-generator/
 
-![QR Generator](screenshot.webp)
 
 ## Tính năng
 
