@@ -8,7 +8,7 @@
     <link rel="icon" href="brand/favicon.ico" sizes="any" />
     <link rel="icon" href="brand/hp-favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="brand/apple-touch-icon.png" />
-    <link rel="stylesheet" href="style.css?v=6" />
+    <link rel="stylesheet" href="style.css?v=7" />
   </head>
   <body>
     <main class="wrap">
@@ -48,14 +48,14 @@
             </div>
             <div class="row2">
               <div class="field"><label for="wenc" data-i18n="lEnc">Bảo mật</label>
-                <select id="wenc"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass" data-i18n="encNone">Không mật khẩu</option></select>
+                <span class="select"><select id="wenc"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass" data-i18n="encNone">Không mật khẩu</option></select><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
               </div>
               <label class="check-row"><input id="whidden" type="checkbox" /> <span data-i18n="lHidden">WiFi ẩn</span></label>
             </div>
           </div>
           <div class="form" data-form="bank" hidden>
             <div class="row2">
-              <div class="field"><label for="bank" data-i18n="lBank">Ngân hàng</label><select id="bank"></select></div>
+              <div class="field"><label for="bank" data-i18n="lBank">Ngân hàng</label><span class="select"><select id="bank"></select><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></div>
               <div class="field"><label for="acc" data-i18n="lAcc">Số tài khoản</label><input id="acc" inputmode="numeric" /></div>
             </div>
             <div class="row2">
