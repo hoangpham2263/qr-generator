@@ -178,3 +178,15 @@ kbd { font: 600 11.5px ui-monospace, monospace; padding: 1px 5px; border: 1px so
 .colors input[type="color"] { width: 32px; height: 32px; padding: 0; border: 1px solid var(--border); border-radius: 8px; background: none; }
 .check-row { display: flex; gap: 8px; align-items: center; font-size: 13px; }
 .warn-text { color: var(--warn); font-size: 12.5px; min-height: 1em; text-align: center; }
+
+/* Header: back link + mobile layout */
+.top-actions { align-items: center; }
+.back { color: var(--primary); }
+@media (max-width: 640px) {
+  .top { flex-wrap: wrap; align-items: flex-start; gap: 10px 12px; }
+  .top-actions { order: -1; width: 100%; justify-content: flex-end; margin: -8px -10px 0 0; }
+  .top-actions .back { margin-right: auto; margin-left: -10px; }
+  .brand img { width: 36px; height: 36px; }
+  h1 { font-size: 22px; }
+  .top p { font-size: 13.5px; }
+}
