@@ -203,3 +203,6 @@ kbd { font: 600 11.5px ui-monospace, monospace; padding: 1px 5px; border: 1px so
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent); }
 .field select:hover, .field input:hover { border-color: color-mix(in srgb, var(--primary) 40%, var(--border)); }
 .field select option { background: var(--bg); color: var(--fg); }
+
+/* Option buttons: regular text weight */
+.seg button, .seg button b, .seg-q b { font-weight: 400; }
