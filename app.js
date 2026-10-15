@@ -136,7 +136,13 @@
     return qr;
   }
 
+  function syncHex() {
+    $("fgHex").textContent = $("fg").value.toUpperCase();
+    $("bgHex").textContent = $("bg").value.toUpperCase();
+  }
+
   function draw() {
+    syncHex();
     const { data, error } = payload();
     const canvas = $("qr");
     const ctx = canvas.getContext("2d");

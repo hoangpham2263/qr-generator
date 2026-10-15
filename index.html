@@ -8,7 +8,7 @@
     <link rel="icon" href="brand/favicon.ico" sizes="any" />
     <link rel="icon" href="brand/hp-favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="brand/apple-touch-icon.png" />
-    <link rel="stylesheet" href="style.css?v=10" />
+    <link rel="stylesheet" href="style.css?v=11" />
   </head>
   <body>
     <main class="wrap">
@@ -78,9 +78,9 @@
 
           <span class="label" data-i18n="style">Kiểu dáng</span>
           <div class="colors">
-            <label><input id="fg" type="color" value="#0f172a" /> <span data-i18n="cFg">Màu mã</span></label>
-            <label><input id="bg" type="color" value="#ffffff" /> <span data-i18n="cBg">Màu nền</span></label>
-            <label class="check-row"><input id="useLogo" type="checkbox" /> <span data-i18n="lLogo">Chèn logo ở giữa</span></label>
+            <label class="chip color-chip"><input id="fg" type="color" value="#0f172a" /><span class="chip-text"><span data-i18n="cFg">Màu mã</span><code id="fgHex">#0F172A</code></span></label>
+            <label class="chip color-chip"><input id="bg" type="color" value="#ffffff" /><span class="chip-text"><span data-i18n="cBg">Màu nền</span><code id="bgHex">#FFFFFF</code></span></label>
+            <label class="chip switch"><input id="useLogo" type="checkbox" /><span class="track" aria-hidden="true"></span><span data-i18n="lLogo">Chèn logo ở giữa</span></label>
             <button id="pickLogo" class="outline" type="button" data-i18n="pickLogo" hidden>Chọn ảnh logo</button>
             <input id="logoFile" type="file" accept="image/*" hidden />
           </div>
@@ -123,6 +123,6 @@
       </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-    <script src="app.js?v=8"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>

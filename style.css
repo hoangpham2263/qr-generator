@@ -216,3 +216,32 @@ strong, b, button, .ghost, .primary, .outline, .btn-sm, .seg button, .seg button
 summary, .howto summary, #list .name, .file-row .name, .page, label, .label b, #detected b { font-weight: 400; }
 h1 { font-weight: 600; }
 .badge { font-weight: 600; }
+
+/* Style row: color chips + logo switch */
+.colors { gap: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 12px 0 6px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--bg); cursor: pointer; font-size: 13px;
+}
+.chip:hover { border-color: color-mix(in srgb, var(--primary) 40%, var(--border)); }
+.color-chip input[type="color"] {
+  width: 32px; height: 32px; padding: 0; border: 0; border-radius: 7px; background: none; cursor: pointer;
+}
+.color-chip input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+.color-chip input[type="color"]::-webkit-color-swatch { border: 1px solid var(--border); border-radius: 7px; }
+.color-chip input[type="color"]::-moz-color-swatch { border: 1px solid var(--border); border-radius: 7px; }
+.chip-text { display: grid; line-height: 1.2; }
+.chip-text code { font: 11.5px ui-monospace, monospace; color: var(--muted); }
+.switch { padding: 0 12px; }
+.switch input { position: absolute; opacity: 0; pointer-events: none; }
+.switch .track {
+  position: relative; width: 34px; height: 20px; border-radius: 999px; background: var(--border); transition: background .15s; flex-shrink: 0;
+}
+.switch .track::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; border-radius: 999px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25); transition: transform .15s;
+}
+.switch input:checked + .track { background: var(--primary); }
+.switch input:checked + .track::after { transform: translateX(14px); }
+.switch input:focus-visible + .track { outline: 2px solid var(--primary); outline-offset: 2px; }
+#pickLogo { height: 44px; border-radius: 10px; }
