@@ -245,3 +245,8 @@ h1 { font-weight: 600; }
 .switch input:checked + .track::after { transform: translateX(14px); }
 .switch input:focus-visible + .track { outline: 2px solid var(--primary); outline-offset: 2px; }
 #pickLogo { height: 44px; border-radius: 10px; }
+
+/* Mobile: 16px form text so iOS does not zoom in on focus */
+@media (max-width: 640px) {
+  input, select, textarea { font-size: 16px !important; }
+}
